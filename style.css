@@ -120,13 +120,20 @@
     .nav-container {
         flex-direction: column;
         align-items: flex-start;
-        padding: 10px 20px;
+        padding: 5px 10px;
+        gap: 8px;
     }
 
     .left-section {
+        display: flex;
         flex-direction: row;
-        width: 100%;
-        justify-content: space-between;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .logo-img {
+        height: 40px;
+        width: 40px;
     }
 
     .logo-text {
@@ -134,41 +141,46 @@
     }
 
     .nav-links {
-        flex-direction: column;
-        align-items: flex-start;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 15px;
+        width: 100%;
+        margin: 0;
+        padding: 0;
         position: static;
         transform: none;
-        width: 100%;
-        margin-top: 10px;
-        gap: 10px;
     }
 
     .nav-links li {
-        width: 100%;
+        width: auto;
     }
 
     .nav-links li a {
-        display: block;
-        width: 100%;
-        padding: 10px 0;
         font-size: 14px;
+        padding: 5px 0;
     }
 
-    .right-section {
+right-section {
         width: 100%;
-        justify-content: flex-start;
-        margin-top: 15px;
+        justify-content: center; /* center the icons */
+        margin-top: 10px;
     }
 
     .icons-container {
-        gap: 10px;
+        display: flex;
+        gap: 15px;
+        align-items: center;
+        justify-content: center; /* center inside container */
+        width: 100%;
     }
 
     .profile-dropdown {
-        right: 0;
-        left: auto;
+        right: 50%;
+        transform: translateX(50%);
     }
 }
+
         /* Car image section */
         .car-section {
             position: relative;
